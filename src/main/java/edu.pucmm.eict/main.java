@@ -11,7 +11,7 @@ public class main {
 
         Javalin app = Javalin.create(config -> {
 
-        }).start(7000);
+        }).start(7005);
 
         JavalinRenderer.register(JavalinThymeleaf.INSTANCE, ".html");
         ///Primera vista de la página
