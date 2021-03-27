@@ -1,24 +1,16 @@
 package edu.pucmm.eict;
 
 import io.javalin.Javalin;
-import io.javalin.plugin.rendering.JavalinRenderer;
-import io.javalin.plugin.rendering.template.JavalinThymeleaf;
 
 public class main {
 
     public static void main(String[] args){
 
-
         Javalin app = Javalin.create(config -> {
-
-        }).start(7005);
-
-        JavalinRenderer.register(JavalinThymeleaf.INSTANCE, ".html");
-        ///Primera vista de la página
-
+        }).start(8002);
         app.get("/", ctx -> {
 
-            ctx.result("ESTA ES EL TESTAPP2");
+            ctx.result("Bienvenido a aplicacion 2");
 
 
         });
